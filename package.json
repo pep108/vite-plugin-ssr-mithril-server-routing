@@ -1,0 +1,27 @@
+{
+  "scripts": {
+    "dev": "npm run server --port 3001",
+    "prod": "npm run build && npm run server:prod",
+    "build": "vite build",
+    "server": "node ./server",
+    "server:prod": "cross-env NODE_ENV=production node ./server"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cross-env": "^7.0.3",
+    "express": "^4.18.1",
+    "mithril": "^2.2.2",
+    "mithril-node-render": "^3.0.2",
+    "sirv": "^2.0.2",
+    "vite": "^4.0.3",
+    "vite-plugin-ssr": "^0.4.79"
+  },
+  "devDependencies": {
+    "standard": "^17.0.0"
+  },
+  "standard": {
+    "env": {
+      "browser": true
+    }
+  }
+}
